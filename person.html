@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Daniel Hill">
+    <meta name="description" content="Wolke 04 - Website von Daniel Hill">
+    <meta name="keywords" content="Daniel Hill, Mediendesign, Webdesign, Sonneberg, Ehrenberg">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+    <title>Wolke 04</title>
+</head>
+
+<body>
+    <header>
+        <div class="container mt-5">
+            <nav>
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="drop" viewBox="0 0 16 16">
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </symbol>
+                        <symbol id="circle-half" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+                        </symbol>
+                        <symbol id="moon" viewBox="0 0 16 16">
+                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                        </symbol>
+                        <symbol id="sun" viewBox="0 0 16 16">
+                            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+                        </symbol>
+                        <symbol id="arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+                        </symbol>
+                    </svg>
+                    <div class="dropdown me-2 bd-mode-toggle">
+                        <button class="btn btn-info dropdown-toggle align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                            <svg class="bi me-2 theme-icon-active" width="1em" height="1em">
+                                <use href="#moon"></use>
+                            </svg>
+                            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                        </button>
+                        <ul class="dropdown-menu shadow" aria-labelledby="bd-theme-text">
+                            <li>
+                                <button type="button" class="dropdown-item align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                    <svg class="bi me-2 theme-icon" width="1em" height="1em">
+                                        <use href="#sun"></use>
+                                    </svg>Hell<svg class="bi ms-auto d-none" width="1em" height="1em">
+                                        <use href="#drop"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                    <svg class="bi me-2 theme-icon" width="1em" height="1em">
+                                        <use href="#moon"></use>
+                                    </svg>Dunkel<svg class="bi ms-auto d-none" width="1em" height="1em">
+                                        <use href="#drop"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="dropdown-item align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                                    <svg class="bi me-2 theme-icon" width="1em" height="1em">
+                                        <use href="#circle-half"></use>
+                                    </svg>System<svg class="bi ms-auto d-none" width="1em" height="1em">
+                                        <use href="#drop"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="index.html" role="button" class="btn btn-info float-end"><strong><i class="bi bi-cloud-fill"></i> Wolke 04</strong></a>
+                <hr>
+                <ul class="nav nav-underline">
+                    <li class="nav-item"><a href="posts.html" role="button" class="nav-link text-info"><strong>Posts</strong></a></li>
+                    <li class="nav-item"><a href="person.html" role="button" class="nav-link text-info active">Person</a></li>
+                    <li class="nav-item"><a href="tribute.html" role="button" class="nav-link text-info"><strong>Tribute</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-sm my-5">
+            <h1 class="mb-5">Biography</h1>
+            <div class="border rounded shadow p-4">
+                <p>Daniel ist 1982 in Suhl geboren. Er ist aufgewachsen, mit Wohnsitz in Altendambach und danach in Ehrenberg. Dies beinhaltete zehn Jahre Schule, mit einem Realschulabschluss 1999 in Thüringen, und einer Berufsausbildung in "Mediendesign" bis hin zum Jahre 2009. Daniel hat einen jüngeren Bruder und eine Nichte. Die Eltern stammen aus Altendambach und Bischofrod in Thüringen. Daniel Hill wird auch gerne "Schwuppi", "Gohang Nadamidai" und "Faultier Slothy" genannt.</p>
+                <p>Daniel ist 179 cm groß, hat dunkle Haare, grüne Augen, Tätowierungen und wiegt 87 Kilogramm. Zu seinen Freizeitaktivitäten zählen sportliche Aktivitäten wie "Schwimmen", "Mountainbike – Crosscountry Cycling" und "Badminton", aber auch "PC-Gaming" wobei meistens Auto-Motorsport gespielt wird. Aber auch Blockbuster wie "Witcher" und "Tomb Raider", sowie Shooter von "Destiny" bis "Wolfenstein".</p>
+                <p>Musikalisch spielt er vorwiegend sehr gerne groovige elektronische Techno-Musik oder aber hört klassische Retro-Songs, Chill-Out und ein wenig Heimatmusik. In seiner Jugend war er sehr viel mit Freunden auf Party unterwegs und feierte in Clubs innerhalb Deutschlands. Ist nach dieser Zeit aber ledig geworden und bis jetzt auch geblieben. Er hat keine Kinder. Seit 2010 lebt er in Sonneberg, nicht weit von seinen Heimatorten entfernt. Zu seiner Gesundheit kann man nicht viel sagen, es geht ihm gut, er hat z.B. zwei Jahre vegan gelebt und war Nichtraucher, obwohl es nicht immer einfach für ihn war.</p>
+                <p>Als gelernter Mediendesigner hat er sich auf Webdesign spezialisiert. Daniel hatte einige Jahre eine Website namens "Minimalistic Design" mittels "Content-Management-System" wie "Wordpress" online verwaltet. Seine Designs sind ausnahmslos minimalistisch und fokussiert auf sehr gute technische Umsetzung. Schnell, stabil und übersichtlich.</p>
+                <p>Daniel verfügt über umfangreiche Kenntnisse in der Erstellung von Websites. Angefangen von "Hyper Text Markup Language" über "Cascading Style Sheets" und "Java-Script". Auch serverseitige Anwendungen wie "PHP" (Hypertext Preprocessor), "MySQL-Datenbank" und "Conten-Management-Systemen". Die Arbeit mit Frameworks wie "Bootstrap" und "Hugo" gehört ebenfalls dazu. Er achtet dabei darauf, dass seine Websites "responsive" sind also angepasst an alle Plattformen wie Smartphones, Tablets und größeren Bildschirmen, sodass der Inhalt für alle einsehbar bleibt. Die Betriebssysteme "Windows" und "Mac OS" sowie "Linux" im Serverbereich zählen von Grund auf dazu und die "Adobe Creative Cloud" auch.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="py-5 text-center">
+            <p class="opacity-75">Wolke04 <i class="bi bi-c-circle"></i> 2023 von Daniel Hill</p>
+            <p class="my-5">-- Made with <i class="bi bi-heart-fill text-info"></i> --</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap.bundle.js"></script>
+    <script src="assets/colormode.js"></script>
+</body>
+
+</html>
